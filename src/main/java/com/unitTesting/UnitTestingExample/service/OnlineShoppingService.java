@@ -6,8 +6,8 @@ import java.math.BigDecimal;
 
 public class OnlineShoppingService {
 
-    private final InventoryService inventoryService = new InventoryService();
-    private final PaymentService paymentService = new PaymentService();
+    private InventoryService inventoryService = new InventoryService();
+    private PaymentService paymentService = new PaymentService();
 
     public BigDecimal getItemPrice(String itemName) {
         Item item = inventoryService.getItemByName(itemName);
